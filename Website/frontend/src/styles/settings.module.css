@@ -1,0 +1,144 @@
+.settings_container {
+  border-radius: 0.4rem;
+  background: #e3e1e1;
+}
+
+.header {
+  padding: 0.6rem 1rem;
+  background: #2e1115;
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.settings {
+  padding: 0.8rem 1rem;
+}
+.settings > * + * {
+  margin-top: 0.8rem;
+}
+
+.basemap_switcher,
+.active_fire {
+  display: flex;
+  flex-direction: column;
+}
+.basemap_switcher h4,
+.active_fire h4 {
+  color: #381217;
+}
+.basemap_switcher > div,
+.active_fire > div {
+  display: flex;
+  flex-direction: column;
+}
+.basemap_switcher label,
+.active_fire label {
+  font-size: 0.9rem;
+}
+.basemap_switcher > * + *,
+.active_fire > * + * {
+  margin-top: 0.4rem;
+}
+.basemap_switcher select,
+.active_fire input {
+  height: 2rem;
+  font-family: inherit;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  border-radius: none;
+}
+.basemap_switcher select {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.active_fire button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  background: rgba(188, 181, 181, 0.72);
+  color: #381217;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.info_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  width: fit-content;
+}
+.info_container label {
+  display: block;
+}
+.info_container p {
+  position: absolute;
+  width: 16rem;
+  background-color: #2e1115;
+  display: none;
+  top: -3.6rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 0.9rem;
+}
+.info_container:hover p {
+  display: block;
+  z-index: 999;
+}
+
+.info_container p::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 16%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #2d2926 transparent transparent transparent;
+}
+
+.time_left_p {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  color: #2c8bd3;
+  font-size: 0.8rem;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.time_left_p .info_message {
+  display: none;
+  position: absolute;
+  background-color: #2e1115;
+  top: -6rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 0.9rem;
+  width: 16rem;
+}
+.time_left_p:hover .info_message {
+  display: block;
+  z-index: 999;
+}
+
+.time_left_p .info_message::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 17%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #2d2926 transparent transparent transparent;
+}
+
+ 

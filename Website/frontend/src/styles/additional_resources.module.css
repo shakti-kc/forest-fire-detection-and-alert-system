@@ -1,0 +1,78 @@
+.container {
+  border-radius: 0.4rem;
+  background: #e3e1e1;
+}
+
+.header {
+  padding: 0.6rem 1rem;
+  background: #2e1115;
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.additional_info {
+  padding: 0.8rem 1rem;
+}
+.additional_info > * + * {
+  margin-top: 0.8rem;
+}
+.additional_info div p {
+  color: #381217;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.additional_info div button{
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  background: rgba(188, 181, 181, 0.72);
+  color: #381217;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.download_data{
+  position: relative;
+  display: flex;
+  gap: .2rem;
+  align-items: center;
+  width: fit-content;
+}
+.download_data svg{
+  cursor: pointer;
+}
+.download_data .download_info{
+  position: absolute;
+  width: 16rem;
+  background-color: #2e1115;
+  display: none;
+  top: -4.6rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.download_data:hover .download_info {
+  display: block;
+  z-index: 999;
+}
+
+.download_data:hover .download_info::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 16%;
+  margin-left: 92px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #2d2926 transparent transparent transparent;
+}
+
+.additional_info div a {
+  color: #381217;
+  text-decoration: underline;
+}

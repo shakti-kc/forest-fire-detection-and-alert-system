@@ -1,0 +1,107 @@
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.report_fire {
+  position: absolute;
+  bottom: 2rem;
+  right: 1.3rem;
+}
+.report_fire button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  gap: 0.2rem;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  background: #ef424a;
+  color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.report_fire_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+.report_fire_popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25rem;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  background: #e3e1e1;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.report_fire_popup header {
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2e1115;
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.report_fire_popup header svg {
+  cursor: pointer;
+}
+
+.report_fire_popup form > * + * {
+  margin-top: 1.2rem;
+}
+.report_fire_popup form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1rem;
+}
+.report_fire_popup form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.report_fire_popup div input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+
+.report_fire_popup p {
+  color: #2c8bd3;
+}
+.report_fire_popup button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  background: rgba(188, 181, 181, 0.72);
+  color: #381217;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+  .map {
+    height: 75dvh;
+  }
+}

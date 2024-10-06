@@ -1,0 +1,41 @@
+.map_info_container {
+  border-radius: 0.4rem;
+  background: #e3e1e1;
+}
+
+.header {
+  padding: 0.6rem 1rem;
+  background: #2e1115;
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.map_info > * + * {
+  margin-top: 0.8rem;
+}
+.map_info {
+  padding: 0.8rem 1rem;
+}
+.map_info div {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+.red_dot,
+.blue_dot,
+.yellow_dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50vw;
+  flex-shrink: 0;
+}
+.red_dot {
+  background: #ff0000;
+}
+.blue_dot {
+  background: #0000ff;
+}
+.yellow_dot {
+  background: yellow;
+}
